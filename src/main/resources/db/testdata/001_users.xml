@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <changeSet id="001_users" author="bjosefow" context="dev">
+        <insert tableName="users">
+            <column name="first_name" value="Jan"/>
+            <column name="last_name" value="Kowalski"/>
+            <column name="date_of_birth" value="1993-04-02"/>
+            <column name="email_adress" value="jan_kowalski@wp.pl"/>
+            <column name="newsletter" value="false"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Beata"/>
+            <column name="last_name" value="Baranowska"/>
+            <column name="date_of_birth" value="1991-01-01"/>
+            <column name="email_adress" value="beata_baranowska@wp.pl"/>
+            <column name="newsletter" value="true"/>
+        </insert>
+        <insert tableName="users">
+            <column name="first_name" value="Malwina"/>
+            <column name="last_name" value="Kozak"/>
+            <column name="date_of_birth" value="1999-03-02"/>
+            <column name="email_adress" value="malwina_kozak@wp.pl"/>
+            <column name="newsletter" value="true"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

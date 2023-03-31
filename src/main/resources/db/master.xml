@@ -6,4 +6,5 @@
         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
     <include file="001-init.xml" relativeToChangelogFile="true"/>
     <include file="002-add_newsletter_email__fields_to_user.xml" relativeToChangelogFile="true"/>
+    <include file="testdata/001_users.xml" relativeToChangelogFile="true" context="dev"/>
 </databaseChangeLog>

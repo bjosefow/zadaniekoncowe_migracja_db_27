@@ -15,21 +15,11 @@ public class User {
 
     private String firstName;
     private String lastName;
-    @DateTimeFormat(pattern = "yyyy-MM--dd")
     private LocalDate dateOfBirth;
 
     private String emailAdress;
 
     private boolean newsletter;
-
-    public User(String firstName, String lastName, LocalDate dateOfBirth) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-    }
-
-    public User() {
-    }
 
     public Long getId() {
         return id;
