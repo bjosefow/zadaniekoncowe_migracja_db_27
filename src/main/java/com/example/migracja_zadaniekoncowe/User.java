@@ -15,17 +15,11 @@ public class User {
 
     private String firstName;
     private String lastName;
-    @DateTimeFormat(pattern = "yyyy-MM--dd")
     private LocalDate dateOfBirth;
 
-    public User(String firstName, String lastName, LocalDate dateOfBirth) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-    }
+    private String emailAdress;
 
-    public User() {
-    }
+    private boolean newsletter;
 
     public Long getId() {
         return id;
@@ -57,6 +51,22 @@ public class User {
 
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getEmailAdress() {
+        return emailAdress;
+    }
+
+    public void setEmailAdress(String emailAdress) {
+        this.emailAdress = emailAdress;
+    }
+
+    public boolean isNewsletter() {
+        return newsletter;
+    }
+
+    public void setNewsletter(boolean newsletter) {
+        this.newsletter = newsletter;
     }
 
     @Override
