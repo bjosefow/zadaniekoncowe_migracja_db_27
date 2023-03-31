@@ -27,7 +27,7 @@ public class MainController {
     }
 
     @PostMapping("/add-user")
-    String addUser(User user){
+    String addUser(User user) {
         userRepository.save(user);
         return "redirect:/";
     }

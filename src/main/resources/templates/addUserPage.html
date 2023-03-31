@@ -20,6 +20,16 @@
     <label for="dateOfBirth" class="form-label">Data urodzenia</label>
     <input type="date" th:field="*{dateOfBirth}" class="form-control" id="dateOfBirth" placeholder="Data urodzenia"></input>
   </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">E-Mail Adres</label>
+    <input type="email" th:field="*{emailAdress}" class="form-control" id="email" placeholder="E-Mail Adres"></input>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-text">
+      <input th:field="*{newsletter}" class="form-check-input mt-0" type="checkbox" aria-label="Newsletter">
+    </div>
+    <span>Zapisz do Newsletter</span>
+  </div>
   <button type="submit" class="btn btn-primary my-3">Zapisz</button>
 </form>
 </div>
